@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0 ;
+}
+body{
+    font-size:20px;
+}
+
+/* 手机端 */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body{
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body {
+      font-size: 10px;
+    }
+  }
+
+
+header{
+    background:whitesmoke;
+    height:100px;
+    text-align: center;
+}
+
+#middle{
+    display: flex;
+    text-align: center;
+}
+#left{
+    max-width:200px;
+    min-width:200px;
+    border:1px solid silver;
+    background:yellow;
+}
+#right{
+    flex:auto;
+    border:1px solid silver;
+    background:green;
+}
+footer{
+    background:skyblue;
+    text-align:center;
+}
+
+#dialog{
+    border:1px solid silver;
+    width:10em;
+    height:5em;
+    background: pink;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-2.5em 0 0 -5em;
+    z-index:1;
+    visibility:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+#countdownBtn{
+    margin-top:10px;
+    background: rgb(181, 224, 107);
+    position: absolute;
+    right:10px;
+    padding:10px;
+}
+#dialog button{
+    padding:10px;
+    background: rgb(181, 224, 107);
+}
+#countdown{
+    border:1px silver solid;
+    background:rgb(237, 64, 87);
+    width:10em;
+    height:10em;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-5em 0 0 -5em;
+    z-index:1;
+    visibility:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+canvas{
+    margin:10px;
+}
